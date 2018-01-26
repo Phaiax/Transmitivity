@@ -2,30 +2,38 @@
 words = [
  "Froschlaich" = ["Leiche", "Kermit", "Kondom"],
  "Sandkuchen" = ["Wüste", "reich gedeckter Tisch", "Kaffee"],
- "Nebensache" = [""],
  "Völkerball" = ["Leute beim Spielen", "Fußball"],
  "Sonnenwende" = ["Sonne", "Wende (Mauer)"],
- "Mondfinsternis" = [""],
- "Taschenuhr" = [""],
- "Pentagram" = ["Gewicht", was mit 5],
- "Tütensuppe" = [""],
- "Sommerschlussverkauf" = [""],
- "Nachtisch" = [""],
- "Drahtesel" = [""],
- "Drehwurm"" = [""],
+ "Mondfinsternis" = ["Mond", "Sterne", "voldemord"],
+ "Taschenuhr" = ["handtasche", "sanduhr"],
+ "Pentagram" = ["Gewicht", "Hand", "Seestern oder Patrick Star"],
+ "Tütensuppe" = ["Tüten", "Wasser", "Maggie"], # Tisch vom Sandkuchen
+ "Sommerschlussverkauf" = ["Geschäfte", "Highheels"], #Sonne
+ "Drahtesel" = ["Fahrrad", "Kamel", "Kuh"],
+ "Drehwurm" = ["Regenwurm"], #Reifen vom Fahrrad
 ]
 
 
 pictures = [
-
-
- "Wüste",
- ,
-
- "Peter Lustig",
- ,
- ,
-# was für "Nach"
-# was für "Neben"
-# was für "Sache"
+    "Klingel",
+    "Regenbogen",
+    "Laptop",
+    "Smartphone",
+    "Dreirad",
+    "andere Tiere",
+    "Nebel",
+    "Gras",
+    "Frühling",
+    "Auto",
+    "Müsli (Schüssel mit Milch)",
+    "Trommel",
+    "Rockband",
+    "Papier",
+    "Haus",
+    "Stuhl",
+    "Mann",
+    "Frau",
+    "Dreieck",
+    "Traktor",
+    "Comicfigur",
 ]
