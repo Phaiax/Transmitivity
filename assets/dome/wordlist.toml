@@ -1,11 +1,31 @@
 
 words = [
- "Froschlaich",
- "Sandkuchen",
-
+ "Froschlaich" = ["Leiche", "Kermit", "Kondom"],
+ "Sandkuchen" = ["Wüste", "reich gedeckter Tisch", "Kaffee"],
+ "Nebensache" = [""],
+ "Völkerball" = ["Leute beim Spielen", "Fußball"],
+ "Sonnenwende" = ["Sonne", "Wende (Mauer)"],
+ "Mondfinsternis" = [""],
+ "Taschenuhr" = [""],
+ "Pentagram" = ["Gewicht", was mit 5],
+ "Tütensuppe" = [""],
+ "Sommerschlussverkauf" = [""],
+ "Nachtisch" = [""],
+ "Drahtesel" = [""],
+ "Drehwurm"" = [""],
 ]
 
 
-bilder = [
- "Wüste"
+pictures = [
+
+
+ "Wüste",
+ ,
+
+ "Peter Lustig",
+ ,
+ ,
+# was für "Nach"
+# was für "Neben"
+# was für "Sache"
 ]
