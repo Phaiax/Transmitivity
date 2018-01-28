@@ -146,6 +146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!114 &154081118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +162,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!23 &154081119
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -304,8 +310,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 570520095}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.583, y: 0.573, z: 0.836}
-  m_LocalScale: {x: 0.01, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: -0.58, y: 0.573, z: -3.17}
+  m_LocalScale: {x: 0.2, y: 3.87, z: 3.76}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -323,6 +329,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!1 &593085545
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!114 &593085547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!23 &593085548
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -468,6 +483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!114 &776496753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,6 +499,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!23 &776496754
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -664,6 +685,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!114 &1187155455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!23 &1187155456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -953,7 +980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bild: {fileID: 0}
-  Cube2: {fileID: 0}
+  url: https://docs.unity3d.com/uploads/Main/ShadowIntro.png
 --- !u!1 &2084027198
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,6 +1014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!114 &2084027200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,6 +1030,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   mrc: {fileID: 0}
+  AngleSpeed: 0
+  direction: 0
+  enableMovement: 0
 --- !u!23 &2084027201
 MeshRenderer:
   m_ObjectHideFlags: 0
