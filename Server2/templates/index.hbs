@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transmitivity</title>
+  </head>
+  <body>
+
+    <h1>Transmitivity</h1>
+
+    <p id="xpquest"></p>
+
+    <p>Enter a word. He will see the first google image search result of that word.</p>
+
+    <input type="text" name="keyword" id="keyword" value="" placeholder="google image search">
+
+    <input type="submit" name="Send" value="Send!" id="sendbutton">
+
+    <p id="msg"></p>
+
+    <script src="/static/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script type="text/javascript" charset="utf-8" >
+
+        $( document ).ready(function() {
+
+            var last_clear_timer_id = null;
+            var current_xpquest = "";
+
+            var clear_in_1_sec = function () {
+                // clear msg after 1 sec
+                last_clear_timer_id = window.setTimeout(function() {
+                    $( "#msg" ).text( "" );
+                }, 1000);
+            };
+
+            var stop_clearing = function() {
+                if (last_clear_timer_id != null) {
+                    window.clearTimeout(last_clear_timer_id);
+                    last_clear_timer_id = null;
+                }
+            };
+
+            var send_keyword = function() {
+                var keyword = $("input#keyword").val();
+                $( "input#keyword" ).val("");
+
+                var keywords_by_words = keyword.split(" ");
+                var allowed = true;
+                keywords_by_words.forEach(function(kw) {
+                    if (current_xpquest.indexOf(kw) !== -1) {
+                        allowed = false;
+                    }
+                });
+
+                if (!allowed) {
+                    stop_clearing();
+                    $( "#msg" ).text( "You can't use words that are in the saying." );
+                    clear_in_1_sec();
+                    return;
+                }
+
+                $.get( "add_image/" + keyword, function( data ) {
+                    stop_clearing();
+                    if (data["result"] == "ok") {
+                        $( "#msg" ).text( "Your image has been submitted." );
+                    } else {
+                        $( "#msg" ).text( "There was an error :(" );
+                    }
+                }).always(clear_in_1_sec);
+
+            }
+
+            var update_xpquest = function() {
+
+                $.get("xpquest/", function ( data ) {
+                    $("#xpquest").text(data.xpquest)
+                    current_xpquest = data.xpquest;
+                }).always(function() {
+                    window.setTimeout(update_xpquest, 1000);
+                });
+            }
+
+            update_xpquest();
+
+            $("input#sendbutton").click(send_keyword);
+            $('input#keyword').keypress(function (e) {
+              if (e.which == 13) {
+                send_keyword();
+                return false;
+              }
+            });
+        });
+    </script>
+
+  </body>
+</html>
