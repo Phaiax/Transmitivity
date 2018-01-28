@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transmitivity</title>
+    <style type="text/css">
+        ul {
+
+            list-style: none;
+        }
+        li {
+            float: left;
+        }
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Transmitivity</h1>
+
+    <input type="submit" name="next_game" value="Next Game!" id="next_game">
+
+
+    <script src="/static/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8" ></script>
+    <script type="text/javascript" charset="utf-8" >
+
+        $( document ).ready(function() {
+
+            var next_game = function() {
+                $.get( "admin/next_game", function( data ) {} );
+            };
+
+            $("input#next_game").click(next_game);
+
+        });
+    </script>
+
+  </body>
+</html>

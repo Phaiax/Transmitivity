@@ -1,0 +1,22 @@
+[package]
+name = "server2"
+version = "0.1.0"
+authors = ["Phaiax <phaiax-git@invisibletower.de>"]
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+serde = "*"
+serde_derive = "*"
+serde_json = "*"
+reqwest = "0.8.4"
+url = "*"
+regex = "0.2.5"
+failure = "0.1.1"
+lazy_static = "*"
+rand = "0.4.2"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json", "handlebars_templates"]

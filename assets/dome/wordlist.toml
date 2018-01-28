@@ -20,7 +20,7 @@ pictures = [
     "Laptop",
     "Smartphone",
     "Dreirad",
-    "andere Tiere",
+        "andere Tiere",
     "Nebel",
     "Gras",
     "Frühling",
@@ -36,4 +36,5 @@ pictures = [
     "Dreieck",
     "Traktor",
     "Comicfigur",
+    "Müll"
 ]
